@@ -26,9 +26,10 @@ body
   align-items: center;
   margin: auto;
   background-color: rgba(47, 79, 79, 0.94);
-  width: 40%;
+  width: 50%;
   border-radius: 30px;
   padding-bottom: 30px;
+  margin-top: 30px;
 }
 
 .selectorTable,
@@ -166,12 +167,20 @@ footer{
     border-radius: 10px;
   }
 
-  .selectorTable{
-    padding-top: 0;
+  .tablero.active{
+    width: 70%;
+    padding-bottom: 40px;
+    margin-top: 80px;
+  }
+
+  .selectorTable.active{
+    width: 70%;
+    margin-top: 100px;
+    padding-bottom: 30px;
   }
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 500px){
 
   body
   {
