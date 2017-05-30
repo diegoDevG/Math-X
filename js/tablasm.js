@@ -6,29 +6,29 @@ function getElementByKeyCode(keyCode){
   return document.querySelector(`[data-key="${keyCode}"]`)
 }
 
-function activate(keyCode){
-  const el = getElementByKeyCode(keyCode)
-  el.classList.add('active')
-  setTimeout(() => deactivate(el), 200)
-}
+// function activate(keyCode){
+//   const el = getElementByKeyCode(keyCode)
+//   el.classList.add('active')
+//   setTimeout(() => deactivate(el), 200)
+// }
+//
+// function deactivate(el){
+//   el.className = 'tabla'
+// }
 
-function deactivate(el){
-  el.className = 'tabla'
-}
+// window.addEventListener('keydown', onkeydown)
+// window.addEventListener('click', setTable)
 
-window.addEventListener('keydown', onkeydown)
-window.addEventListener('click', setTable)
+// function onkeydown(ev){
+//   activate(ev.keyCode)
+//   selectorTable.className ='selectorTable'
+//   tablero.classList.add('active')
+//   // window.removeEventListener('keydown', onkeydown)
+// }
 
-function onkeydown(ev){
-  activate(ev.keyCode)
-  selectorTable.className ='selectorTable'
-  tablero.classList.add('active')
-  window.removeEventListener('keydown', onkeydown)
-}
-
-function goFs(){
-  document.body.requestFullscreen();
-}
+// function goFs(){
+//   document.body.requestFullscreen();
+// }
 
 function setTable(n){
   selectorTable.className ='selectorTable'
@@ -213,3 +213,14 @@ function tablaInvertida(numero){
 
 
 }
+
+function showMenu(){
+  document.getElementById('menu').classList.toggle('active')
+}
+
+
+//Gestos touch con Hammer js
+var $body = document.body;
+var gestos = new Hammer($body);
+gestos.on('swipeleft', showMenu);
+gestos.on('swiperight', showMenu);
