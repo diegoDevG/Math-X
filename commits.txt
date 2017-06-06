@@ -32,5 +32,75 @@ $ git superlog
 * f17374a - (5 days ago) Fixed - Bug en tablets, se ajusta tamaño en resoluciones sobre los 500px - Ingeekar
 * c27a08e - (6 days ago) Primera version funcional Tablas de Multiplicar - Ingeekar
 
+**********************************
+********************************
+********************************
+
+Actualizacion -Junio06/2017
+diego@DESKTOP-T7AF4GT MINGW64 /d/Desarrollo/2017/Fundamentos de javascript/tabla                                                                                                                s (master)
+$ git superlog
+* 900e43e - (6 minutes ago) Fixed - compatibilidad de navegadores css - Ingeekar                                                                                                                 (HEAD -> master, moduloPrueba)
+* d44af3a - (7 days ago) Fixed: correccion errores menu offcanvas - Ingeekar (or                                                                                                                igin/master)
+* 3a7a39f - (7 days ago) Se agrega menu de navegacion Off-Canvas - Ingeekar
+* f17374a - (11 days ago) Fixed - Bug en tablets, se ajusta tamaño en resolucion                                                                                                                es sobre los 500px - Ingeekar
+* c27a08e - (12 days ago) Primera version funcional Tablas de Multiplicar - Inge                                                                                                                ekar
+
+diego@DESKTOP-T7AF4GT MINGW64 /d/Desarrollo/2017/Fundamentos de javascript/tabla                                                                                                                s (master)
+$ git log
+commit 900e43e82ea796b330428c734e8f54a079033738
+Author: Ingeekar <diego.cardenas@ingenieros.com>
+Date:   Tue Jun 6 17:44:08 2017 -0500
+
+    Fixed - compatibilidad de navegadores css
+
+commit d44af3a02a8b9a4b4ef8761185bbe22a509a1aa9
+Author: Ingeekar <diego.cardenas@ingenieros.com>
+Date:   Tue May 30 19:23:02 2017 -0500
+
+    Fixed: correccion errores menu offcanvas
+
+commit 3a7a39fd37e5b7ff9974f384247a9a73a106eda4
+Author: Ingeekar <diego.cardenas@ingenieros.com>
+Date:   Tue May 30 15:32:41 2017 -0500
+
+    Se agrega menu de navegacion Off-Canvas
+
+commit f17374aa22adc93c150d024e3fdaeba8771c46e1
+Author: Ingeekar <diego.cardenas@ingenieros.com>
+Date:   Fri May 26 07:07:21 2017 -0500
+
+    Fixed - Bug en tablets, se ajusta tamaño en resoluciones sobre los 500px
+:...skipping...
+commit 900e43e82ea796b330428c734e8f54a079033738
+Author: Ingeekar <diego.cardenas@ingenieros.com>
+Date:   Tue Jun 6 17:44:08 2017 -0500
+
+    Fixed - compatibilidad de navegadores css
+
+commit d44af3a02a8b9a4b4ef8761185bbe22a509a1aa9
+Author: Ingeekar <diego.cardenas@ingenieros.com>
+Date:   Tue May 30 19:23:02 2017 -0500
+
+    Fixed: correccion errores menu offcanvas
+
+commit 3a7a39fd37e5b7ff9974f384247a9a73a106eda4
+Author: Ingeekar <diego.cardenas@ingenieros.com>
+Date:   Tue May 30 15:32:41 2017 -0500
+
+    Se agrega menu de navegacion Off-Canvas
+
+commit f17374aa22adc93c150d024e3fdaeba8771c46e1
+Author: Ingeekar <diego.cardenas@ingenieros.com>
+Date:   Fri May 26 07:07:21 2017 -0500
+
+    Fixed - Bug en tablets, se ajusta tamaño en resoluciones sobre los 500px
+
+commit c27a08e0b6f572713fb39a633f22ccfe228552cd
+Author: Ingeekar <diego.cardenas@ingenieros.com>
+Date:   Thu May 25 17:45:15 2017 -0500
+
+    Primera version funcional Tablas de Multiplicar
+~
+
 
 
