@@ -1,6 +1,7 @@
 .contenido{
   background-image: url('../img/background.jpg');
-  flex: 1;
+  -webkit-box-flex: 1;
+          flex: 1;
 }
 
 body
@@ -10,8 +11,11 @@ body
   font-family: Montserrat, sans-serif;
   font-size: 1.5em;
   text-align: center;
+  display: -webkit-box;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
   min-height: 100vh;
   margin: 0;
 }
@@ -20,6 +24,7 @@ body
     cursor: pointer;
     z-index: 3;
     color: rgba(47, 79, 79, 0.44);
+    display: -webkit-box;
     display: flex;
     height: 0;
     padding-left: 7px;
@@ -45,10 +50,15 @@ body
 }
 
 .menu ul{
+  display: -webkit-box;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+          justify-content: flex-end;
 }
 
 .menu ul li{
@@ -56,8 +66,10 @@ body
   padding-top: 20px;
   border-bottom: 1px solid white;
   width: 90%;
+  display: -webkit-box;
   display: flex;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+          justify-content: flex-end;
   padding-right: 20px;
 }
 
@@ -86,10 +98,14 @@ body
 
 .selectorTable.active{
   padding-top: 1%;
+  display: -webkit-box;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
   justify-content: space-around;
-  align-items: center;
+  -webkit-box-align: center;
+          align-items: center;
   margin: auto;
   background-color: rgba(47, 79, 79, 0.94);
   width: 50%;
@@ -107,19 +123,26 @@ body
 
 
 .buttonsbox{
+  display: -webkit-box;
   display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-align: center;
+          align-items: center;
   padding-left: 8px;
 }
 
 .row{
+  display: -webkit-box;
   display: flex;
 }
 
 .tabla, .row, label{
-  animation: appear 2.5s;
+  -webkit-animation: appear 2.5s;
+          animation: appear 2.5s;
 }
 
 label{
@@ -144,10 +167,15 @@ label{
 }
 
 .tablero.active{
+  display: -webkit-box;
   display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-align: center;
+          align-items: center;
   padding-left: 8px;
   padding-top: 1%;
   margin: auto;
@@ -163,10 +191,15 @@ label{
 }
 
 .teclado{
+  display: -webkit-box;
   display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-align: center;
+          align-items: center;
   padding-left: 8px;
 }
 /*
@@ -175,8 +208,11 @@ label{
 }*/
 
 .dashboard{
+  display: -webkit-box;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
 }
 .lista, .listainvertida{
   font-size: .8em;
@@ -211,7 +247,8 @@ label{
 }
 
 #multiply{
-  animation: appear 2.5s;
+  -webkit-animation: appear 2.5s;
+          animation: appear 2.5s;
 }
 footer{
   font-size: .6em;
@@ -232,8 +269,10 @@ footer a{
   }
 
   .contenido{
+    display: -webkit-box;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+            align-items: center;
   }
 
   .menu{
@@ -286,14 +325,19 @@ footer a{
    }
 
    .menu ul li{
-     justify-content: center;
+     -webkit-box-pack: center;
+             justify-content: center;
 
    }
 
   #share{
+    display: -webkit-box;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
     height: 200px;
   }
 
@@ -321,6 +365,19 @@ footer a{
     padding-bottom: 30px;
   }
 
+}
+
+
+
+@-webkit-keyframes appear {
+  0% {
+    color: #37474F;
+    border-color: #37474F;
+  }
+  100% {
+    color: #FAFAFA;
+    border-color: rgba(26, 253, 11, 0.22);
+  }
 }
 
 
