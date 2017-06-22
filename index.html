@@ -20,7 +20,7 @@
               <a href="index.html">Aprender</a>
             </li>
             <li>
-              <a href="index.html">Cuanto sé?</a>
+              <a href="#" onclick="test()">Cuanto sé?</a>
             </li>
             <li>
               <a href="#">Compartir</a>
@@ -65,6 +65,106 @@
           </div>
         </div>
       </div>
+
+      <div id="levelbox" class="levelbox">
+        <div class="cabecera">
+          <h1>Prueba que tanto has aprendido!</h1>
+          <p>Selecciona un nivel</p>
+        </div>
+        <div class="buttonsbox">
+          <div class="row">
+            <div class="tabla" onclick="aprendiz()">Aprendiz</div>
+            <div class="tabla" onclick="medio()">Medio</div>
+            <div class="tabla" onclick="">Experto</div>
+          </div>
+        </div>
+      </div>
+
+      <div id="aprendizProbar" class="aprendizProbar">
+        <div class="cabecera">
+          <h1>Prueba que tanto has aprendido!</h1>
+          <p>Elije una tabla!</p>
+        </div>
+        <div class="buttonsbox">
+          <div class="row">
+            <div class="tabla" onclick="tablaTest(1)" >1</div>
+            <div class="tabla" onclick="tablaTest(2)" >2</div>
+            <div class="tabla" onclick="tablaTest(3)" >3</div>
+          </div>
+          <div class="row">
+            <div class="tabla" onclick="tablaTest(4)"  >4</div>
+            <div class="tabla" onclick="tablaTest(10)"  >10</div>
+
+          </div>
+        </div>
+      </div>
+
+      <div id="medio" class="medio">
+        <div class="cabecera">
+          <h1>Prueba que tanto has aprendido!</h1>
+          <p>Elije una tabla!</p>
+        </div>
+        <div class="buttonsbox">
+          <div class="row">
+            <div class="tabla" onclick="tablaTest(5)" >5</div>
+            <div class="tabla" onclick="tablaTest(6)" >6</div>
+            <div class="tabla" onclick="tablaTest(7)" >7</div>
+          </div>
+          <div class="row">
+            <div class="tabla" onclick="tablaTest(8)"  >8</div>
+            <div class="tabla" onclick="tablaTest(9)"  >9</div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div id="aprendiz" class="aprendiz">
+        <!-- <div class="cabecera">
+          <h1>Prueba lo aprendido!</h1>
+          <p></p>
+        </div> -->
+        <div class="buttonsbox">
+          <div class="row">
+            <!-- <div class="tabla" onclick="">N</div>
+            <div class=" operador" onclick="">X</div>
+            <div class="tabla" onclick="">N</div> -->
+
+            <!-- <div class=" operador" onclick="">=</div> -->
+          </div>
+            <div class="row">
+              <label id= "operacion"></label>
+            <div class=" resultado" id="resultado" onclick="">?..</div>
+          </div>
+        </div>
+        <div class="cabecera">
+          <!-- <p>Usa este teclado para escrbir tu respuesta!</p> -->
+        </div>
+        <div class="buttonsbox">
+          <div class="row">
+            <div class="tabla" onclick="insert(1)">1</div>
+            <div class="tabla" onclick="insert(2)">2</div>
+            <div class="tabla" onclick="insert(3)">3</div>
+          </div>
+          <div class="row">
+            <div class="tabla" onclick="insert(4)">4</div>
+            <div class="tabla" onclick="insert(5)">5</div>
+            <div class="tabla" onclick="insert(6)">6</div>
+          </div>
+          <div class="row">
+            <div class="tabla" onclick="insert(7)">7</div>
+            <div class="tabla" onclick="insert(8)">8</div>
+            <div class="tabla" onclick="insert(9)">9</div>
+          </div>
+          <div class="row">
+            <div class="tabla" onclick="borrar()">Borrar</div>
+            <div class="tabla" onclick="insert(0)">0</div>
+            <div class="tabla" onclick="enviar()">Enviar</div>
+          </div>
+        </div>
+      </div>
+
+
       <div id="tablero" class="tablero ">
         <div class="display">
           <label id="">Repite en voz baja</label><br>
@@ -76,30 +176,6 @@
           </div>
           <div class="listainvertida" id="listainvertida"></div>
         </div>
-        <!--<div class="teclado">
-          <div class="row">
-            <div class="tabla" onclick="setTable(1)"  data-key="49">1</div>
-            <div class="tabla" onclick="setTable(2)"  data-key="50">2</div>
-            <div class="tabla" onclick="setTable(3)"  data-key="51">3</div>
-          </div>
-          <div class="row">
-            <div class="tabla" onclick="setTable(4)"  data-key="52">4</div>
-            <div class="tabla" onclick="setTable(5)"  data-key="53">5</div>
-            <div class="tabla" onclick="setTable(6)"  data-key="54">6</div>
-          </div>
-          <div class="row">
-            <div class="tabla" onclick="setTable(7)"  data-key="55">7</div>
-            <div class="tabla" onclick="setTable(8)"  data-key="56">8</div>
-            <div class="tabla" onclick="setTable(9)"  data-key="57">9</div>
-          </div>
-          <div class="row">
-            <div class="tabla" onclick=""  data-key="55"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></div>
-            <div class="tabla" onclick="setTable(8)"  data-key="48">0</div>
-          </div>
-        </div>-->
-
-
-
       </div>
     </div>
     <footer>

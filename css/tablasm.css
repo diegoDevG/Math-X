@@ -96,7 +96,11 @@ body
 }
 
 
-.selectorTable.active{
+.selectorTable.active,
+.levelbox.active,
+.aprendiz.active,
+.aprendizProbar.active,
+.medio.active{
   padding-top: 1%;
   display: -webkit-box;
   display: flex;
@@ -114,9 +118,34 @@ body
   margin-top: 30px;
 }
 
+.operador{
+    padding: 15px 20px;
+    margin: 10px;
+    font-weight: bold;
+    border: 2px solid rgba(26, 253, 11, 0.22);
+    border-radius: 10px;
+    color: aqua;
+}
+
+.resultado{
+    padding: 15px 50px;
+    margin: 10px;
+    font-weight: bold;
+    border: 2px solid rgba(98, 177, 246, 0.99);
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    color: #3b5959;
+    max-width: 170px;
+    height: 30px;
+    margin-top: 25px;
+}
 .selectorTable,
 .tablero,
-.imagen-destacada{
+.imagen-destacada,
+.levelbox,
+.aprendiz,
+.aprendizProbar,
+.medio{
   display: none;
 }
 
@@ -140,7 +169,7 @@ body
   display: flex;
 }
 
-.tabla, .row, label{
+.tabla, .row, .operador, label{
   -webkit-animation: appear 2.5s;
           animation: appear 2.5s;
 }
@@ -186,6 +215,11 @@ label{
 }
 
 .display{
+  padding: 30px 10px;
+  font-size: 2em;
+}
+
+#operacion{
   padding: 30px 10px;
   font-size: 2em;
 }
@@ -300,10 +334,37 @@ footer a{
     margin-top: 80px;
   }
 
-  .selectorTable.active{
+  .selectorTable.active,
+  .levelbox.active,
+  .aprendizProbar.active,
+  .medio.active{
     width: 70%;
     margin-top: 100px;
     padding-bottom: 30px;
+  }
+
+  .aprendiz.active{
+    width: 80%;
+    margin-top: 100px;
+    padding-bottom: 30px;
+  }
+
+
+
+  .levelbox.active .buttonsbox .row{
+    flex-direction: column;
+
+  }
+
+  .levelbox.active .buttonsbox .row .tabla{
+    margin: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .resultado{
+    height: 17px;
+    padding: 15px 10px;
+    width: 120px;
   }
 }
 
@@ -353,16 +414,35 @@ footer a{
     border-radius: 50px;
   }
 
-  .tablero.active{
+  .tablero.active,
+  .levelbox.active,
+  .aprendiz.active,
+  .aprendizProbar.active
+  .medio.active{
     width: 90%;
     padding-bottom: 40px;
     margin-top: 80px;
   }
 
+  .levelbox.active .buttonsbox .row{
+    flex-direction: column;
+  }
+
+  .levelbox.active .buttonsbox .row .tabla{
+    margin: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
   .selectorTable.active{
     width: 90%;
     margin-top: 100px;
     padding-bottom: 30px;
+  }
+
+  .resultado{
+    height: 17px;
+    padding: 15px 10px;
+    width: 120px;
   }
 
 }
