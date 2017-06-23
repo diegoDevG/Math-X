@@ -96,9 +96,13 @@ body
 }
 
 
+
+
+.inicio.active,
 .selectorTable.active,
 .levelbox.active,
 .aprendiz.active,
+.experto.active,
 .aprendizProbar.active,
 .medio.active{
   padding-top: 1%;
@@ -139,11 +143,13 @@ body
     height: 30px;
     margin-top: 25px;
 }
+.inicio,
 .selectorTable,
 .tablero,
 .imagen-destacada,
 .levelbox,
 .aprendiz,
+.experto,
 .aprendizProbar,
 .medio{
   display: none;
@@ -183,6 +189,10 @@ label{
   font-weight: bold;
   border: 2px solid rgba(26, 253, 11, 0.22);
   border-radius: 10px;
+}
+
+.unactive{
+  display: none;
 }
 
 .tabla:hover{
@@ -328,6 +338,10 @@ footer a{
     border-radius: 10px;
   }
 
+  .unactive{
+    display: none;
+  }
+
   .tablero.active{
     width: 70%;
     padding-bottom: 40px;
@@ -343,7 +357,8 @@ footer a{
     padding-bottom: 30px;
   }
 
-  .aprendiz.active{
+  .aprendiz.active,
+  .experto.active{
     width: 80%;
     margin-top: 100px;
     padding-bottom: 30px;
@@ -412,6 +427,10 @@ footer a{
     font-weight: bold;
     border: 2px solid rgba(26, 253, 11, 0.22);
     border-radius: 50px;
+  }
+
+  .unactive{
+    display: none;
   }
 
   .tablero.active,

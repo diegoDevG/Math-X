@@ -17,10 +17,10 @@
       <nav id="menu" class="menu">
         <ul>
             <li>
-              <a href="#" onclick="aprender()">Aprender</a>
+              <a href="index.html" >Aprender</a>
             </li>
             <li>
-              <a href="cuanto-se.html">Cuanto sé?</a>
+              <a href="#" onclick="test()">Cuanto sé?</a>
             </li>
             <li>
               <a href="#">Compartir</a>
@@ -48,7 +48,7 @@
           <p>Hola! <br>¿Que tabla quieres aprender hoy?</p>
         </div>
       </div> -->
-      <div id="selectorTable" class="selectorTable active ">
+      <!-- <div id="selectorTable" class="selectorTable ">
         <div class="cabecera">
           <h1>Tablas de multiplicar</h1>
           <p>Hola! <br>¿Que tabla quieres aprender hoy?</p>
@@ -70,9 +70,9 @@
             <div class="tabla" onclick="setTable(9)"  data-key="57">9</div>
           </div>
         </div>
-      </div>
+      </div> -->
 
-      <!-- <div id="levelbox" class="levelbox">
+      <div id="levelbox" class="levelbox active">
         <div class="cabecera">
           <h1>Prueba que tanto has aprendido!</h1>
           <p>Selecciona un nivel</p>
@@ -81,7 +81,7 @@
           <div class="row">
             <div class="tabla" onclick="aprendiz()">Aprendiz</div>
             <div class="tabla" onclick="medio()">Medio</div>
-            <div class="tabla" onclick="">Experto</div>
+            <div class="tabla" onclick="experto()">Experto</div>
           </div>
         </div>
       </div>
@@ -135,6 +135,7 @@
           </div>
         </div>
         <div class="cabecera">
+          <!-- <p>Usa este teclado para escrbir tu respuesta!</p> -->
         </div>
         <div class="buttonsbox">
           <div class="row">
@@ -155,13 +156,14 @@
           <div class="row">
             <div class="tabla" onclick="borrar()">Borrar</div>
             <div class="tabla" onclick="insert(0)">0</div>
-            <div class="tabla" onclick="enviar()">Enviar</div>
+            <div id="enviarAprendiz" class="tabla" onclick="enviar()">Enviar</div>
+            <div id="enviarExperto" class="tabla unactive" onclick="enviarExp()">Enviar</div>
           </div>
         </div>
-      </div> -->
+      </div>
 
 
-      <div id="tablero" class="tablero ">
+      <!-- <div id="tablero" class="tablero ">
         <div class="display">
           <label id="">Repite en voz baja</label><br>
           <label id="multiply"></label>
@@ -172,7 +174,7 @@
           </div>
           <div class="listainvertida" id="listainvertida"></div>
         </div>
-      </div>
+      </div> -->
     </div>
     <footer>
       Diego Andres Cardenas <br> <a href="https://twitter.com/ingeekar" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i>@ingeekar</a>

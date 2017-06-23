@@ -1,3 +1,67 @@
+Junio 23 2017
+diego@DESKTOP-T7AF4GT MINGW64 /d/Desarrollo/2017/Fundamentos de javascript/tablas (master)
+$ git log
+commit 270533de6d5860ab49935de65974c6c6ba7a58b1
+commit 270533de6d5860ab49935de65974c6c6ba7a58b1
+Author: Ingeekar <diego.cardenas@ingenieros.com>
+Date:   Thu Jun 22 16:36:49 2017 -0500
+
+    Modulo de pruebas niveles basico y medio operativos
+
+commit 337c11031080cb317de9a3c9a09261e55aeca83b
+Author: Ingeekar <diego.cardenas@ingenieros.com>
+Date:   Tue Jun 6 17:52:07 2017 -0500
+
+    Actualizacion de archivo de registro Commits
+
+commit 900e43e82ea796b330428c734e8f54a079033738
+Author: Ingeekar <diego.cardenas@ingenieros.com>
+Date:   Tue Jun 6 17:44:08 2017 -0500
+
+    Fixed - compatibilidad de navegadores css
+
+commit d44af3a02a8b9a4b4ef8761185bbe22a509a1aa9
+Author: Ingeekar <diego.cardenas@ingenieros.com>
+Date:   Tue May 30 19:23:02 2017 -0500
+
+    Fixed: correccion errores menu offcanvas
+
+commit 3a7a39fd37e5b7ff9974f384247a9a73a106eda4
+Author: Ingeekar <diego.cardenas@ingenieros.com>
+Date:   Tue May 30 15:32:41 2017 -0500
+
+    Se agrega menu de navegacion Off-Canvas
+
+commit f17374aa22adc93c150d024e3fdaeba8771c46e1
+Author: Ingeekar <diego.cardenas@ingenieros.com>
+Date:   Fri May 26 07:07:21 2017 -0500
+
+    Fixed - Bug en tablets, se ajusta tamaño en resoluciones sobre los 500px
+
+commit c27a08e0b6f572713fb39a633f22ccfe228552cd
+Author: Ingeekar <diego.cardenas@ingenieros.com>
+Date:   Thu May 25 17:45:15 2017 -0500
+
+diego@DESKTOP-T7AF4GT MINGW64 /d/Desarrollo/2017/Fundamentos de javascript/tablas (master)
+$
+
+diego@DESKTOP-T7AF4GT MINGW64 /d/Desarrollo/2017/Fundamentos de javascript/tablas (master)
+$ git superlog
+* 270533d - (24 hours ago) Modulo de pruebas niveles basico y medio operativos - Ingeekar (HEAD -> master, origin/master)
+* 337c110 - (2 weeks ago) Actualizacion de archivo de registro Commits - Ingeekar
+* 900e43e - (2 weeks ago) Fixed - compatibilidad de navegadores css - Ingeekar (moduloPrueba)
+* d44af3a - (3 weeks ago) Fixed: correccion errores menu offcanvas - Ingeekar
+* 3a7a39f - (3 weeks ago) Se agrega menu de navegacion Off-Canvas - Ingeekar
+* f17374a - (4 weeks ago) Fixed - Bug en tablets, se ajusta tamaño en resoluciones sobre los 500px - Ingeekar
+* c27a08e - (4 weeks ago) Primera version funcional Tablas de Multiplicar - Ingeekar
+
+diego@DESKTOP-T7AF4GT MINGW64 /d/Desarrollo/2017/Fundamentos de javascript/tablas (master)
+$
+
+
+**************************
+*****************************
+*****************************
 $ git log
 commit d44af3a02a8b9a4b4ef8761185bbe22a509a1aa9
 Author: Ingeekar <diego.cardenas@ingenieros.com>
