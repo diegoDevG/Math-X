@@ -212,6 +212,7 @@ gestos.on('swiperight', showMenu);
 
 
 function test() {
+  location.reload()
   aprendizProbar.classList.remove('active');
   document.getElementById('aprendiz').classList.remove('active');
   levelbox.classList.add('active');
@@ -222,6 +223,7 @@ function test() {
 function aprendiz() {
   levelbox.classList.remove('active');
   aprendizProbar.classList.add('active');
+  controlador = 0;
 }
 
 function tablaTest(numero) {
@@ -323,6 +325,7 @@ function terminar() {
 function medio() {
   levelbox.classList.remove('active');
   nivelMedio.classList.add('active');
+  controlador =0;
 }
 
 function experto() {
